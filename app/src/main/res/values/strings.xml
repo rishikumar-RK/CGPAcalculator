@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CGPA</string>
+
+    <string-array name="grades">
+        <item>Nil</item>
+        <item>O</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>B+</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="credits">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
