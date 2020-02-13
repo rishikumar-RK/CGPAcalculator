@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+int c[10],grade[10],i,n;
+char s[10][10];
+float cgpa=0,u=0;
+scanf("%d",&n);
+printf("Enter the no of subjects %d",n);
+for(i=0;i<n;i++)
+{
+    printf("\nsubject %d",i+1);
+    scanf("%s",s[i]);
+    printf("\nEnter the letter grade %s",s[i]);
+    if((strcmp(s[i],"o"))==0)
+        grade[i]=10;
+    else if((strcmp(s[i],"a+"))==0)
+        grade[i]=9;
+    else if((strcmp(s[i],"a"))==0)
+        grade[i]=8;
+    else if((strcmp(s[i],"b+"))==0)
+        grade[i]=7;
+    else if((strcmp(s[i],"b"))==0)
+        grade[i]=6;
+    else
+        grade[i]==0;
+    scanf("%d",&c[i]); 
+    printf("\nEnter the credit %d",c[i]);
+    u+=c[i];
+        
+    
+}
+for(i=0;i<n;i++)
+{
+    cgpa+=(c[i]*grade[i])/u;
+}
+printf("\nCGPA is %f",cgpa);
+
+    return 0;
+}
